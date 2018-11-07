@@ -1,4 +1,4 @@
-# Microsoft Teams Bot Lab (Bot Builder SDK 4.0)
+# Microsoft Teams - Bot Lab (Bot Builder SDK 4.0)
 
 ## Prerequisites 
 - Visual Studio Code (https://code.visualstudio.com/download)
