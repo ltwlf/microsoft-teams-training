@@ -6,6 +6,8 @@
 - Node (LTS) (https://nodejs.org/en/blog/release/v8.9.0/)
 - Ngrok (https://ngrok.com/)
 - Office 365 (Dev) Subscription (https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-get-started)
+- Prepare your Office 365 Tenant (https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-tenant)
+
 
 
 https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview

@@ -8,6 +8,8 @@
 - Ngrok (https://ngrok.com/)
 - Office 365 (Dev) Subscription (https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-get-started)
 - Azure Subscription (https://azure.microsoft.com/en-us/free/)
+- Prepare your Office 365 Tenant (https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-tenant)
+
 
 ## 1. Setup the project
 You can either install and use the dotnet new echo bot template or clone this repository and start with the project under [src/bot/start/TeamsBot](/src/bot/start/TeamsBot).
