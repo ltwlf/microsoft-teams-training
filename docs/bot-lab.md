@@ -270,5 +270,9 @@ if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
 ![Screenshot welcome card in Teams](/docs/images/teams-chat-3.PNG)
 
 
-There is much more to learn about Bot Framework. Especially the Dialog Framework and LUIS are quite important for great Bots. Checkout the documentation https://docs.microsoft.com/de-de/azure/bot-service/ 
+There is much more to learn about Bot Framework. Especially the Dialog Framework and LUIS are quite important for great Bots. 
+
+Checkout the [Basic Bot example / template](https://github.com/ltwlf/dotnet-new-templates-bot/tree/master/Templates/BotBuilderV4Basic/Content) to see the Dialog Framework and LUIS in action.
+
+Official documentation https://docs.microsoft.com/de-de/azure/bot-service/ 
 
