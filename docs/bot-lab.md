@@ -30,20 +30,20 @@ In anyyway you should now have a runnig echo bot. So lets try it.
     - Enter "Hello" into the chat window and press enter
     - The bot should reply with "Turn 1: You sent 'Hello'"
   
-    ![Screenshot bot emulator](/docs/images/bot-emulator-1.png) 
+    ![Screenshot bot emulator](./images/bot-emulator-1.PNG) 
 
 ### Explanation
 The .bot file was introduced with the Bot Builder SDK 4.0 and describes the configuration and services a bot uses. If you take a look to our .bot file, you will that our simple echo bot only contains an endpoint for our bot: http://localhost:3978/api/messages. The emulator used this endpoint to communicate with our bot. You can see the message flow on the right side of the emulator. 
 
 ### Message Flow
-![Screenshot bot message flow](/docs/images/bot-builder-activity.png)
+![Screenshot bot message flow](./images/bot-builder-activity.png)
 
 ### Turn-taking
 Let's have a look the implementation of the bot in the **Bot.cs** file. The most important method is **OnTurnAsync(ITurnContext turnContext)**. The bot builder defines a concept **Turn-taking**. In gneral Turn-taking defines a type of organization in conversation and discourse where participants speak one at a time in alternating turns. A turn consists of the user's incoming activity to the bot and any activity the bot sends back to the user as an immediate response. 
 
 The turn context object provides information about the activity such as the sender and receiver, the channel, and other data needed to process the activity. It also allows for the addition of information during the turn across various layers of the bot.
 
-![Screenshot tun-taking](/docs/images/bot-builder-activity-processing-stack.png)
+![Screenshot tun-taking](./images/bot-builder-activity-processing-stack.png)
 
 Our echo bot just returns the message of the user and the count of the current turn.
 
@@ -53,7 +53,7 @@ Read more at: https://docs.microsoft.com/en-us/azure/bot-service/
 To let out Bot communicate with Teams with we need a middleware in Azure, the such called Bot Connector. The bot connector is an abstraction between the Bot and the various channels the Bot can communicate with. 
 You can host your Bot wherever you want, but the Bot Connector must be hosted on Azure. 
 
-![Screenshot Bot Connector](/docs/images/bot-connector.png)
+![Screenshot Bot Connector](./images/bot-connector.png)
 
 In this Lab we are going to host the bot on our dev box so that we can debug the bot. For the Bot Connector later we need to make the bot endpoint public available. We do this with tool called ngrok.
 [**Ngrok**](https://ngrok.com/) is a multiplatform tunnelling, reverse proxy software that establishes secure tunnels from a public endpoint such as internet to a locally running network service like our bot.
@@ -67,7 +67,7 @@ In this Lab we are going to host the bot on our dev box so that we can debug the
 ```
 The result should look like this:
 
-![Screenshot ngrok.exe](/docs/images/ngrok.png)
+![Screenshot ngrok.exe](./images/ngrok.png)
 
 The yellow marked address is our public endpoint that we need later. You test the tunnel, verify that the bot is started and than browse to the endpoint, for example https://5c0c876a.ngrok.io/. You should see the bot welcome screen.
 The the shell with ngrok have to keep open and running.
@@ -112,7 +112,7 @@ The connector is ready now!
 ### Add the Bot to Teams (via Deep Link)
 Without any further configuration you can now start chating with the Bot via a deep link. To get the deep link just go back to the "Channel Settings" in Bot Connector's details blade on Azure and click on the "Microsoft Teams Channel" link. The link will start a direct chat with your Bot. Let's say hi!
 
-![Screenshot chat with bot](/docs/images/teams-chat-1.PNG)
+![Screenshot chat with bot](./images/teams-chat-1.PNG)
 
 You can distribute your Bot to everybody with sharing the deep link. With the deep link you can only start direct chats. You can't add the Bot to a Teams Channel.
 
@@ -122,10 +122,10 @@ To leverage the full potential of Bots in Teams you have to create a Teams App.
 Teams App are only registrations, the services are hosted wherever you want. The easiest and recommend way to create a Teams App is the "App Studio", which is a Teams App itself. 
 
 - Install "App Studio" App via the Teams Store
-![Screeshot App Studio in Store](/docs/images/teams-app-studio-1.PNG)
+![Screeshot App Studio in Store](./images/teams-app-studio-1.PNG)
 - Within the App Studio switch to the "Manifest Editor"
 - "Create a new app"
-![Screeshot App Studio in Store](/docs/images/teams-app-studio-2.PNG)
+![Screeshot App Studio in Store](./images/teams-app-studio-2.PNG)
 - "App Details" (fill out the required fields):
     - Short name: "My Teams App"
     - App ID: click generate
@@ -163,7 +163,7 @@ Teams App are only registrations, the services are hosted wherever you want. The
         - Set up
 - Now you can chat with your bot either via direct messages or in a Teams channel
 
-![Screenshot channel chat with the bot](/docs/images/teams-chat-2.PNG)
+![Screenshot channel chat with the bot](./images/teams-chat-2.PNG)
 
 You can download the App Package or publish it to the store.
 
@@ -181,7 +181,7 @@ dotnet restore
 - Open the App Studio Teams App again and navigate to the Card Editor. The editor allows you to create and  preview cards and to send you the cards as chat message. 
 - However in our lab we are going to use the Adaptive Card Designer Beta (https://acdesignerbeta.azurewebsites.net/). This designer has much richer experience. Play around with the designer and create your own welcome card.
 
-![Screenshot Adaptive Card Designer](/docs/images/adaptive-card-designer.PNG)
+![Screenshot Adaptive Card Designer](./images/adaptive-card-designer.PNG)
 
 - Optional: When you are done you can test the card in App Studio and send it to you as a test message.
 - Now we add the card to the Bot project. Create a new file with the name "***WelcomeCard.json***" in the root of the Bot project and copy & paste your Json from the designer or the Json bellow and save.
@@ -269,7 +269,7 @@ if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
 ```
 - Start the debuger again and test the Bot in the emulator and in Teams. The Bot will now send the welcome card whenever a user joins a conversation.
 
-![Screenshot welcome card in Teams](/docs/images/teams-chat-3.PNG)
+![Screenshot welcome card in Teams](./images/teams-chat-3.PNG)
 
 
 There is much more to learn about Bot Framework. Especially the Dialog Framework and LUIS are quite important for great Bots. 

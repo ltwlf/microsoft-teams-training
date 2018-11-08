@@ -65,7 +65,7 @@ To publish our local endpoint to the internet we are going to use ngrok.
 .\ngrok http localhost:5000
 ```
 The result should look like this:
-![Screenshot of ngrok](/docs/images/ngrok-tabs.png)
+![Screenshot of ngrok](./images/ngrok-tabs.png)
 In the example the public endpoint is:
 https://d5732479.ngrok.io. 
 
@@ -75,10 +75,10 @@ Let ngrok run and save the URL for later.
 You can either create a new App or reuse the App from the Bot Lab. 
 
 - Install "App Studio" App via the Teams Store
-![Screeshot App Studio in Store](/docs/images/teams-app-studio-1.PNG)
+![Screeshot App Studio in Store](./images/teams-app-studio-1.PNG)
 - Within the App Studio switch to the "Manifest Editor"
 - "Create a new app"
-![Screeshot App Studio in Store](/docs/images/teams-app-studio-2.PNG)
+![Screeshot App Studio in Store](./images/teams-app-studio-2.PNG)
 - "App Details" (fill out the required fields):
     - Short name: "My Teams App"
     - App ID: click generate
@@ -103,7 +103,7 @@ You can either create a new App or reuse the App from the Bot Lab.
         - Install
         - Open
     - The result should look like this: 
-![Screenshot of the tab](/docs/images/hello-tabs.PNG)
+![Screenshot of the tab](./images/hello-tabs.PNG)
 
 ## Demo 2 - Teams React Control Library
 
@@ -205,7 +205,7 @@ and replace the **render** method with:
   }
 ``` 
 Your tab should now look like this:
-![Screenshot of the tab](/docs/images/tabs-example-tab.png)
+![Screenshot of the tab](./images/tabs-example-tab.png)
 
 ## Demo 3 - Configurable Tabs
 
@@ -336,15 +336,15 @@ Open Teams "App Studio" again and configure the Teams tab.
     - Click "Test and distribute"
     - Install
     - "Add to a Team": choose the Team where you want to add the tab
-    ![sdsd](/docs/images/tabs-config-1.png)
+    ![sdsd](./images/tabs-config-1.png)
     - Install
     - Choose a Channel for the Tab
-    ![sdsd](/docs/images/tabs-config-2.png)
+    ![sdsd](./images/tabs-config-2.png)
     - Tab -> Set up
     - Configure our tab and enter a project id
-    ![sdsd](/docs/images/tabs-config-3.png)
+    ![sdsd](./images/tabs-config-3.png)
     -Save
     -Et Voilà - our configured tab
-    ![sdsd](/docs/images/tabs-config-4.png)
+    ![sdsd](./images/tabs-config-4.png)
 
     ## THE END
