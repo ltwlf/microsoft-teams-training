@@ -65,7 +65,7 @@ To publish our local endpoint to the internet we are going to use ngrok.
 .\ngrok http localhost:5000
 ```
 The result should look like this:
-![Screenshot of ngrok](./images/ngrok-tabs.png)
+![Screenshot of ngrok](./images/ngrok-tabs.PNG)
 In the example the public endpoint is:
 https://d5732479.ngrok.io. 
 
@@ -103,7 +103,7 @@ You can either create a new App or reuse the App from the Bot Lab.
         - Install
         - Open
     - The result should look like this: 
-![Screenshot of the tab](./images/hello-tabs.PNG)
+![Screenshot of the tab](./images/hello-tabs.png)
 
 ## Demo 2 - Teams React Control Library
 
