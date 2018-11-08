@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/react-teams-template.csproj"
+                "${workspaceFolder}/myteamsapp.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
