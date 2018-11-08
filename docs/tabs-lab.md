@@ -5,6 +5,7 @@
 - .NET Core SDK 2.1 (https://www.microsoft.com/net/download) 
 - Node (LTS) (https://nodejs.org/en/blog/release/v8.9.0/)
 - Ngrok (https://ngrok.com/)
+- C# for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - Office 365 (Dev) Subscription (https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-get-started)
 - Prepare your Office 365 Tenant (https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-tenant)
 
@@ -36,7 +37,7 @@ Teams support two scopes for tabs:
 Clone or download this repository and open a shell in \src\tabs\start\ or create a new project with dotnet new:
 ```bash
 dotnet new -i "Ltwlf.AspNetCoreTS"
-dotnet new react-ts -n "MyTeamsApp"
+dotnet new react-ts -n "TeamsTab"
 ```
 
 Replace the render method in **./ClientApp/src/App.tsx** with:
@@ -230,7 +231,7 @@ public render() {
             <div>
                 <Route path="/" exact render={() => <TabExample/> } />   
                 <Route path="/config" render={() => <div>Config</div> } />    
-                <Route path="/project/:id" render={(props) =>  <div>{<h1>props.match.params.id</h1>}</div>} />
+                <Route path="/project/:id" render={(props) =>  <h1>{props.match.params.id}</h1>} />
             </div>
             </Router>
         </TeamsComponentContext>
@@ -325,7 +326,19 @@ export class ConfigTab extends React.Component<{}, {
 }
 ```
 
-Open Teams "App Studio" again and configure the Teams tab.
+In **App.tsx** replace the the line
+```cs
+<Route path="/config" render={() => <div>Config</div> } />  
+``` 
+with 
+```cs
+<Route path="/config" render={() => <ConfigTab/>} />
+```
+to render our ConfigTab for the /config route.
+
+Now we are ready to register our configurable tab in the app manifest.
+
+Open Teams App **Studio** again and configure the Teams tab.
 - In App Studio switch to the "Manifest Editor"
 - Under "Recently created apps" click on the previously created app
 - Choose on the left "Capabilities"

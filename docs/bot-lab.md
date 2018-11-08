@@ -6,22 +6,23 @@
 - Node v8.9.0 (LTS) (https://nodejs.org/en/blog/release/v8.9.0/)
 - Bot Emulator 4.1 (https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Ngrok (https://ngrok.com/)
+- - C# for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - Office 365 (Dev) Subscription (https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-get-started)
 - Azure Subscription (https://azure.microsoft.com/en-us/free/)
 - Prepare your Office 365 Tenant (https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-tenant)
 
 
 ## 1. Setup the project
-You can either install and use the dotnet new echo bot template or clone this repository and start with the project under [src/bot/start/TeamsBot](/src/bot/start/TeamsBot).
+You can either use the dotnet new echo bot template or clone this repository and start with the project under [src/bot/start/TeamsBot](/src/bot/start/TeamsBot).
 
 ### Create the project with dotnet new
-Create a folder for your poject and execute the following commands.
+Create a folder for your poject and execute the following commands:
 ```bash
 dotnet new -i "Ltwlf.BotBuilderV4.Echo"
 dotnet new bot-echo -n TeamsBot
 ```
 ## First Test
-In anyyway you should now have a runnig echo bot. So lets try it. 
+You should have a runnig echo bot now. Let's try it:
 - Open the project in Visual Studio Code
 - Start the debugger with STRG+SHIFT+D
 - Start the Bot **Framework Emulator V4**
