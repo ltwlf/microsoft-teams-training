@@ -67,7 +67,7 @@ In this Lab we are going to host the bot on our dev box so that we can debug the
 ```
 The result should look like this:
 
-![Screenshot ngrok.exe](./images/ngrok.png)
+![Screenshot ngrok.exe](./images/ngrok.PNG)
 
 The yellow marked address is our public endpoint that we need later. You test the tunnel, verify that the bot is started and than browse to the endpoint, for example https://5c0c876a.ngrok.io/. You should see the bot welcome screen.
 The the shell with ngrok have to keep open and running.
