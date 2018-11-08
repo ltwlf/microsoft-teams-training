@@ -30,7 +30,7 @@ In anyyway you should now have a runnig echo bot. So lets try it.
     - Enter "Hello" into the chat window and press enter
     - The bot should reply with "Turn 1: You sent 'Hello'"
   
-    ![Screenshot bot emulator](/docs/images/bot-emulator-1.png) 
+    ![Screenshot bot emulator](./images/bot-emulator-1.PNG) 
 
 ### Explanation
 The .bot file was introduced with the Bot Builder SDK 4.0 and describes the configuration and services a bot uses. If you take a look to our .bot file, you will that our simple echo bot only contains an endpoint for our bot: http://localhost:3978/api/messages. The emulator used this endpoint to communicate with our bot. You can see the message flow on the right side of the emulator. 
