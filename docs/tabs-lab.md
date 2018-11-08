@@ -33,7 +33,11 @@ Teams support two scopes for tabs:
 - **Personal** scope: Tabs in the personal scope allow users to interact with your experience privately. Currently, all such tabs are static tabs—content that is relevant to individual users.
 
 ## Demo 1 - Create a personal tab
-Clone or download this repository and open a shell in \src\tabs\start\
+Clone or download this repository and open a shell in \src\tabs\start\ or create a new project with dotnet new:
+```bash
+dotnet new -i "Ltwlf.AspNetCoreTS"
+dotnet new react-ts -n "MyTeamsApp"
+```
 
 Replace the render method in **./ClientApp/src/App.tsx** with:
 ```tsx
