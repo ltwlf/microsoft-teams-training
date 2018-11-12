@@ -50,6 +50,10 @@ public render() {
     );
   }
 ```
+and delete the line: 
+```tsx
+import logo from './logo.svg';
+```
 
 Start the project with CTRL+SHIFT+D. You should see a simple page with "Hello Tabs!". 
 
