@@ -6,7 +6,7 @@
 - Node v8.9.0 (LTS) (https://nodejs.org/en/blog/release/v8.9.0/)
 - Bot Emulator 4.1 (https://github.com/Microsoft/BotFramework-Emulator/releases)
 - Ngrok (https://ngrok.com/)
-- - C# for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- C# for Visual Studio Code (https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 - Office 365 (Dev) Subscription (https://docs.microsoft.com/en-us/office/developer-program/office-365-developer-program-get-started)
 - Azure Subscription (https://azure.microsoft.com/en-us/free/)
 - Prepare your Office 365 Tenant (https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-tenant)
