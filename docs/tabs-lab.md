@@ -1,4 +1,4 @@
-# Microsoft Teams - Tabs Lab
+# OBSOLETE - Microsoft Teams - Tabs Lab
 
 ## Prerequisites 
 - Visual Studio Code (https://code.visualstudio.com/download)
