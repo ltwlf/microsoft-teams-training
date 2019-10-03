@@ -104,6 +104,8 @@ The next step is to create the Bot Connector in Azure
     -  Save
   
 The connector is ready now!
+
+> The App registration that we just generated uses Client Credentials flow to secure the server to server connection between your Bot and the Microsoft Bot Connector. The App doesn't need any permission, but must have muti-tenant scope in case you want to create the app registraction manually.
   
 ### Configure the Bot
 - Back in VS Code open the appsettings.json file  
