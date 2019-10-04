@@ -16,7 +16,8 @@ This image illustrates the authentication we are going to implement.
 
 ![Bot Authentication Add Settings](./images/bot-auth-add-settings.png)
 
-- **Name:** "AzureAD"
+- Name: "**AzureAD**" 
+  (Please make sure that the setting is named exactly like this. The name will be referenced later in the code.)
 - Choose: "**Azure Active Directory v2**"
 
 ![Bot Authentication New Connecetion](./images/bot-auth-new-connection.png)
