@@ -25,14 +25,17 @@ This image illustrates the authentication we are going to implement.
 
 - **Client id**: App Id from Lab 1
 - **Client secret**: App password from Lab 1
-- **Tenant**: *name of you tenant e.g. mytenanat.com or use the "common" for multi tenant authentication*
+- **Tenant**: *name of you tenant e.g.mytenanat.onmicrosoft.com or use the "common" for multi tenant authentication*
 - **Scopes**: "openid profile offline_access"
+- Click on "Test Connection" to make sure everything is correct and grant Microsoft Graph permissions.
 - Save
-- Now naviagte in Azure to **Azure Active Directory** -> **App registrations**, open the App with the Id from above and add the folllowing redirect URL in the **Authentication**: `https://token.botframework.com/.auth/web/redirect`
+
+### Add redirect URL to app registration
+Now naviagte in Azure to **Azure Active Directory** -> **App registrations**, open the App with the Id from above and add the following redirect URL in the **Authentication**: `https://token.botframework.com/.auth/web/redirect`
 
 ![Authentication Blade Image](./images/bot-auth-redirect.png)
 
-
+### Add valid domain to Teams App
 You also have to configure your Teams App to trust the url ***.botframework.com**. If you forget this step and click in Teams on the Sign In button nothing will happen.
 
 - Go to Teams **App Studio** and navigate ot to our Teams App (check out Lab 1 about Teams App Studio)
