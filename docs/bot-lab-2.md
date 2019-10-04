@@ -18,7 +18,7 @@ dotnet restore
 ![Screenshot Adaptive Card Designer](./images/adaptive-card-designer.PNG)
 
 - Optional: When you are done you can test the card in App Studio and send it to you as a test message.
-- Now we add the card to the Bot project. Create a new file with the name "***WelcomeCard.json***" in the root of the Bot project and copy & paste your Json from the designer or the Json bellow and save.
+- Now we add the card to the Bot project. Create a new folder named **Cards** and the create new file with name "***WelcomeCard.json***" there. Then copy & paste your JSON from the designer or the JSON snippet bellow into the file and save
 
 ```json
 {
@@ -63,17 +63,17 @@ dotnet restore
     "version": "1.0"
 }
 ```
-- Open Bot.cs and import the following namespaces
+- Open **EchBot.cs** and import the following namespaces
 ```CSharp
 using AdaptiveCards;
 using System.IO;
 using System.Linq;
 ```
-- Add the following method to the Bot class
+- Add the following method to the **EchBot** class
 ```CSharp
 public async Task SendWelcomeCard(ITurnContext turnContext)
 {
-    var card = File.ReadAllText(@".\welcomeCard.json");
+    var card = File.ReadAllText(@".\Cards\WelcomeCard.json");
     var parsedResult = AdaptiveCard.FromJson(card);
     var attachment = new Attachment
     {
@@ -87,13 +87,10 @@ public async Task SendWelcomeCard(ITurnContext turnContext)
     await turnContext.SendActivityAsync(activity);
 }
 ```
-- Replace 
+- Replace **OnMembersAddedAsync** with the following code snippet:
+
 ```CSharp
-await turnContext.SendActivityAsync($"{turnContext.Activity.Type} event detected");
-```
-- with
-```CSharp
-if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
+protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
 {
     if (turnContext.Activity.MembersAdded.Any(m => m.Name != "Bot"))
     {
@@ -104,7 +101,6 @@ if (turnContext.Activity.Type == ActivityTypes.ConversationUpdate)
 - Start the debuger again and test the Bot in the emulator and in Teams. The Bot will now send the welcome card whenever a user joins a conversation.
 
 ![Screenshot welcome card in Teams](./images/teams-chat-3.PNG)
-
 
 There is much more to learn about Bot Framework. Especially the Dialog Framework and LUIS are quite important for great Bots. 
 
