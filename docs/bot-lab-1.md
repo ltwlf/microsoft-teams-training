@@ -95,7 +95,7 @@ The next step is to create the Bot Connector in Azure
     -  ...
 -  When the connector is created, browse to its details blade in the Azure Portal
 -  Choose Settings
-    -  Optional: Upload a bot icon, for example [this](/documents/images/bot-icon.png).
+    -  Optional: Upload a bot icon, for example [this](/docs/images/bot-icon.png).
     -  Look for the subheadline "Microsoft App ID" and click on "Manage".
     -  Copy and save the "Application Id" (we need this later)
     -  Click on "Generate New Password", copy and save the password (we need this later). 
