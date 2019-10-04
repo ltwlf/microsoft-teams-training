@@ -26,7 +26,7 @@ dotnet restore
     "body": [
         {
             "type": "Image",
-            "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB3AwMUeNoq4gUBGe6Ocj8kyh3bXa9ZbV7u1fVKQoyKFHdkqU",
+            "url": "https://raw.githubusercontent.com/ltwlf/microsoft-teams-training/master/docs/images/Microsoft365-bootcamp-2019-zurich.png",
             "size": "stretch"
         },
         {
