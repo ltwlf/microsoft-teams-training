@@ -20,7 +20,7 @@ You can either use the dotnet new echo bot template or clone this repository and
 
 Create a folder for your poject and execute the following commands:
 ```bash
-dotnet new -i "dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot"
+dotnet new -i Microsoft.Bot.Framework.CSharp.EchoBot
 dotnet new echobot -n TeamsBot
 ```
 You can find all avaliable bot dotnet new templates here https://github.com/Microsoft/BotBuilder-Samples/tree/master/generators/dotnet-templates
