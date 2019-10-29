@@ -9,7 +9,7 @@ The Bot Lab is build with the latest Bot Builder SDK 4.
 ### [Lab 1 - Getting Started](./docs/bot-lab-1.md)
 ### [Lab 2 - Adaptive Cards](./docs/bot-lab-2.md)
 ### [Lab 3 - Authentication](./docs/bot-lab-3.md)
-### [Lab 4 - QnA Maker (todo)](./docs/bot-lab-4.md)
+### [Lab 4 - QnA Maker](./docs/bot-lab-4.md)
 
 
 <br>
