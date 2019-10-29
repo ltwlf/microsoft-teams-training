@@ -25,3 +25,4 @@ Thanks for your contribution!
 - [David Schneider](https://github.com/fiddi)
 - Manuel Sidler
 - [Peter Wiens](https://github.com/peterwiens)
+- [Sven Saatkamp](https://github.com/svaenn)
