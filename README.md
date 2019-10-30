@@ -24,5 +24,6 @@ The Bot Lab is build with the latest Bot Builder SDK 4.
 Thanks for your contribution!
 - [David Schneider](https://github.com/fiddi)
 - Manuel Sidler
-- [Peter Wiens](https://github.com/peterwiens)
+- [Peter Wiens](https://github.com/
+### Berlin
 - [Sven Saatkamp](https://github.com/svaenn)
