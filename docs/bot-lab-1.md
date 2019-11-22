@@ -38,7 +38,7 @@ You should have a functional echo bot now. Let's check it:
   
     ![Screenshot bot emulator](./images/bot-emulator-1.PNG) 
 
-Our Bot inherits from **AvtivityHandler**. There is also a special **[TeamsActivityHandler](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/bot-basics?tabs=csharp)** which helps to handle some Teams specific events. However, for our lab we can just use the default AvtivityHandler.
+Our Bot inherits from **AvtivityHandler**. There is also a special **[TeamsActivityHandler](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/bot-basics?tabs=csharp)** which helps to handle some Teams specific events. However, for our lab we can just use the default ActivityHandler.
 
 ### Message Flow
 ![Screenshot bot message flow](./images/bot-builder-activity.png)
